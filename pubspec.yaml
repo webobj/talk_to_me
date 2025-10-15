@@ -1,0 +1,44 @@
+name: talk_to_me_app
+description: A voice-based companion app for macOS and iOS
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Speech recognition
+  speech_to_text: ^6.6.0
+
+  # Text to speech
+  flutter_tts: ^3.8.5
+
+  # State management
+  provider: ^6.1.1
+
+  # Local storage
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+
+  # HTTP requests for LLM APIs
+  http: ^1.1.2
+
+  # Environment variables
+  flutter_dotenv: ^5.1.0
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
